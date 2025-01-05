@@ -5,20 +5,20 @@
 class Egate < Formula
   desc ""
   homepage "https://github.com/aka-somix/eventbridge-gate"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.0/eventbridge-gate_ 0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "dec052be22960c61f5e7ade2b76a7cb8224f54baebcec688e82335b1d44687f4"
+      url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.1/eventbridge-gate_Darwin_x86_64.tar.gz"
+      sha256 "ee696580541d741719ed45ba68148810adeb4e0414608e95078d9e9ac589db64"
 
       def install
         bin.install "egate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.0/eventbridge-gate_ 0.1.0_Darwin_arm64.tar.gz"
-      sha256 "102f6ec6adce4e0f1ea6c99dd20a745989b07ca95b74b38f2c14841b26b6be69"
+      url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.1/eventbridge-gate_Darwin_arm64.tar.gz"
+      sha256 "1193d3434c3558b27c1ca40d24da23fe96fd637dc3ecbbc86b34e5c9dc56923b"
 
       def install
         bin.install "egate"
@@ -29,8 +29,8 @@ class Egate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.0/eventbridge-gate_ 0.1.0_Linux_x86_64.tar.gz"
-        sha256 "6ce158298260d1cbfd6deb9ca52bf2d955314753b79b61c71d13bce47adeb6de"
+        url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.1/eventbridge-gate_Linux_x86_64.tar.gz"
+        sha256 "faa0703a2f13cb780e4c915e882b1064f7423f2da1d7cb18f17fd1f3d31abf6d"
 
         def install
           bin.install "egate"
@@ -39,8 +39,8 @@ class Egate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.0/eventbridge-gate_ 0.1.0_Linux_arm64.tar.gz"
-        sha256 "7665decccaa9fe32ca411c219c450f3c52131dc3e417aa93a0e3315824058b58"
+        url "https://github.com/aka-somix/eventbridge-gate/releases/download/v0.1.1/eventbridge-gate_Linux_arm64.tar.gz"
+        sha256 "24a7df2bf07fc07e2206ba6d0dc4fcfe8b2d33ec62aca6145cb6c82f69400363"
 
         def install
           bin.install "egate"
